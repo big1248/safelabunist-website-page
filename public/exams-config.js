@@ -1,5 +1,5 @@
 // exams-config.js - 시험 데이터 구조 설정 파일
-// 자동 생성됨 - 2025. 12. 4. 오후 5:54:39
+// 자동 생성됨 - 2026. 1. 13. 오후 7:19:49
 
 const EXAM_STRUCTURE = {
     "재난안전": {
@@ -2783,7 +2783,134 @@ const EXAM_STRUCTURE = {
             "산업안전지도사": {
                 "displayName": "산업안전지도사",
                 "icon": "👷",
-                "sessions": []
+                "sessions": [
+                    {
+                        "year": 2024,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2024-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2023,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2023-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2022,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2022-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2021,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2021-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2021,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2021-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2020,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2020-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2020,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2020-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2019,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2019-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2019,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2019-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2018,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2018-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2018,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2018-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2017,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2017-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2017,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2017-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2016,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2016-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2016,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2016-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2015,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2015-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2015,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2015-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2014,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2014-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2014,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2014-1.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2013,
+                        "session": "2",
+                        "fileName": "ind-safety-advisor-2013-2.csv",
+                        "questionCount": 75
+                    },
+                    {
+                        "year": 2013,
+                        "session": "1",
+                        "fileName": "ind-safety-advisor-2013-1.csv",
+                        "questionCount": 75
+                    }
+                ]
             },
             "위험물기능장": {
                 "displayName": "위험물기능장",
@@ -4445,7 +4572,332 @@ const EXAM_STRUCTURE = {
             "소방설비산업기사(기계분야)": {
                 "displayName": "소방설비산업기사(기계분야)",
                 "icon": "⚙️",
-                "sessions": []
+                "sessions": [
+                    {
+                        "year": 2019,
+                        "session": "3",
+                        "fileName": "fire-equip-ind-mech-2019-3.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2019,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2019-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2019,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2019-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2018,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2018-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2018,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2018-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2018,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2018-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2017,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2017-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2017,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2017-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2017,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2017-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2016,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2016-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2016,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2016-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2016,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2016-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2015,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2015-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2015,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2015-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2015,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2015-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2014,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2014-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2014,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2014-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2014,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2014-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2013,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2013-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2013,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2013-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2013,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2013-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2012,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2012-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2012,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2012-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2012,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2012-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2011,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2011-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2011,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2011-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2011,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2011-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2010,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2010-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2010,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2010-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2010,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2010-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2009,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2009-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2009,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2009-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2009,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2009-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2008,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2008-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2008,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2008-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2008,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2008-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2007,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2007-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2007,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2007-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2007,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2007-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2006,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2006-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2006,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2006-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2006,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2006-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2005,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2005-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2005,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2005-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2005,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2005-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2004,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2004-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2004,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2004-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2004,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2004-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2003,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2003-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2003,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2003-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2003,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2003-1.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2002,
+                        "session": "4",
+                        "fileName": "fire-equip-ind-mech-2002-4.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2002,
+                        "session": "2",
+                        "fileName": "fire-equip-ind-mech-2002-2.csv",
+                        "questionCount": 80
+                    },
+                    {
+                        "year": 2002,
+                        "session": "1",
+                        "fileName": "fire-equip-ind-mech-2002-1.csv",
+                        "questionCount": 80
+                    }
+                ]
             },
             "소방설비산업기사(전기분야)": {
                 "displayName": "소방설비산업기사(전기분야)",
