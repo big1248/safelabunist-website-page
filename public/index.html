@@ -80,13 +80,14 @@
             flex: 1;
             min-width: 200px;
             padding: 25px;
-            border: none;
+            border: 2px solid #e9ecef;
             border-radius: 15px;
             font-size: 1.1rem;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
-            color: #333;
+            color: #7f8c8d;
+            background: #f8f9fa;
             position: relative;
             overflow: hidden;
         }
@@ -99,7 +100,7 @@
             width: 0;
             height: 0;
             border-radius: 50%;
-            background: rgba(0,0,0,0.05);
+            background: rgba(52, 152, 219, 0.05);
             transform: translate(-50%, -50%);
             transition: width 0.6s, height 0.6s;
         }
@@ -111,19 +112,23 @@
 
         .nav-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #3498db;
+            color: #3498db;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.15);
         }
 
         .btn-new-quiz {
-            background: #e9ecef;
+            background: white;
+            border-color: #3498db;
+            color: #3498db;
         }
 
         .btn-dashboard {
-            background: #e9ecef;
+            background: white;
         }
 
         .btn-user-guide {
-            background: #e9ecef;
+            background: white;
         }
 
         .step-indicator {
@@ -135,21 +140,23 @@
         }
 
         .step {
-            background: #e9ecef;
-            color: #6c757d;
+            background: white;
+            color: #3498db;
             padding: 12px 25px;
             border-radius: 25px;
             font-weight: bold;
             opacity: 0.6;
             transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
         }
 
         .step.active {
             opacity: 1;
-            background: #dee2e6;
-            color: #333;
+            background: white;
+            color: #2980b9;
             transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+            border: 2px solid #3498db;
         }
 
         .selection-area {
@@ -166,7 +173,7 @@
             color: #2c3e50;
             margin-bottom: 30px;
             padding-bottom: 15px;
-            border-bottom: 3px solid #6c757d;
+            border-bottom: 3px solid #3498db;
             display: flex;
             align-items: center;
             gap: 15px;
@@ -206,8 +213,8 @@
 
         .card:hover {
             transform: translateY(-8px);
-            border-color: #6c757d;
-            box-shadow: 0 15px 35px rgba(108, 117, 125, 0.3);
+            border-color: #3498db;
+            box-shadow: 0 15px 35px rgba(52, 152, 219, 0.2);
         }
 
         .card-icon {
@@ -270,7 +277,7 @@
         .session-year {
             font-size: 1.6rem;
             font-weight: bold;
-            color: #6c757d;
+            color: #3498db;
             margin-bottom: 8px;
         }
 
@@ -290,7 +297,7 @@
             color: #2c3e50;
             margin-bottom: 20px;
             padding-left: 15px;
-            border-left: 5px solid #333;
+            border-left: 5px solid #3498db;
         }
 
         .navigation-buttons {
@@ -331,18 +338,20 @@
         }
 
         .btn-back {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
         }
 
         .btn-start {
-            background: #e9ecef;
-            color: #333;
+            background: #3498db;
+            color: white;
+            border: 2px solid #3498db;
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.2);
         }
 
         .btn:disabled {
@@ -358,11 +367,11 @@
             margin-bottom: 25px;
             color: #7f8c8d;
             font-size: 1rem;
-            border-left: 4px solid #333;
+            border-left: 4px solid #3498db;
         }
 
         .breadcrumb span {
-            color: #6c757d;
+            color: #3498db;
             font-weight: bold;
         }
 
@@ -442,11 +451,11 @@
             </div>
 
             <div class="selection-area">
-                <div class="navigation-buttons" style="margin-bottom: 25px;">
-                    <button class="btn btn-back" id="backBtn" onclick="goBack()" style="display: none;">
+                <div class="navigation-buttons" id="topNavButtons" style="margin-bottom: 25px; display: none;">
+                    <button class="btn btn-back" onclick="goBack()">
                         <span style="position: relative; z-index: 1;">이전 단계</span>
                     </button>
-                    <button class="btn btn-start" id="startBtn" onclick="startQuiz()" style="display: none;">
+                    <button class="btn btn-start" id="startBtnTop" onclick="startQuiz()" style="display: none;">
                         <span style="position: relative; z-index: 1;">학습 시작</span>
                     </button>
                 </div>
@@ -472,6 +481,15 @@
                         <span>회차를 선택하세요</span>
                     </h2>
                     <div id="sessionContainer"></div>
+                </div>
+
+                <div class="navigation-buttons" id="bottomNavButtons" style="margin-top: 25px; display: none;">
+                    <button class="btn btn-back" onclick="goBack()">
+                        <span style="position: relative; z-index: 1;">이전 단계</span>
+                    </button>
+                    <button class="btn btn-start" id="startBtnBottom" onclick="startQuiz()" style="display: none;">
+                        <span style="position: relative; z-index: 1;">학습 시작</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -525,7 +543,8 @@
             
             document.getElementById('categorySelection').style.display = 'none';
             document.getElementById('examSelection').style.display = 'block';
-            document.getElementById('backBtn').style.display = 'block';
+            document.getElementById('topNavButtons').style.display = 'flex';
+            document.getElementById('bottomNavButtons').style.display = 'flex';
             
             loadExams(categoryKey);
         }
@@ -551,7 +570,7 @@
                 card.className = 'card';
                 
                 const badgeHtml = exam.hasData 
-                    ? '<span class="card-badge">데이터 있음</span>'
+                    ? ''
                     : '<span class="card-badge empty">준비중</span>';
                 
                 card.innerHTML = `
@@ -639,7 +658,8 @@
 
         function selectSession(session, cardElement) {
             selectedSession = session;
-            document.getElementById('startBtn').style.display = 'block';
+            document.getElementById('startBtnTop').style.display = 'block';
+            document.getElementById('startBtnBottom').style.display = 'block';
             
             document.querySelectorAll('.session-card').forEach(card => {
                 card.classList.remove('selected');
@@ -653,14 +673,16 @@
                 selectedCategory = null;
                 document.getElementById('examSelection').style.display = 'none';
                 document.getElementById('categorySelection').style.display = 'block';
-                document.getElementById('backBtn').style.display = 'none';
+                document.getElementById('topNavButtons').style.display = 'none';
+                document.getElementById('bottomNavButtons').style.display = 'none';
             } else if (currentStep === 3) {
                 currentStep = 2;
                 selectedExam = null;
                 selectedSession = null;
                 document.getElementById('sessionSelection').style.display = 'none';
                 document.getElementById('examSelection').style.display = 'block';
-                document.getElementById('startBtn').style.display = 'none';
+                document.getElementById('startBtnTop').style.display = 'none';
+                document.getElementById('startBtnBottom').style.display = 'none';
             }
             
             updateStepIndicator();

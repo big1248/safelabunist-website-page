@@ -28,11 +28,12 @@
         }
 
         .dashboard-header {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #2c3e50;
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 30px;
+            border: 2px solid #3498db;
         }
 
         .exam-title {
@@ -79,7 +80,7 @@
             background: #ffffff;
             padding: 20px;
             border-radius: 15px;
-            border-left: 4px solid #333;
+            border-left: 4px solid #3498db;
         }
 
         .stat-title {
@@ -118,11 +119,12 @@
 
         .action-btn {
             padding: 25px 20px;
-            border: none;
+            border: 2px solid #e0e0e0;
             border-radius: 15px;
             font-size: 1rem;
             font-weight: bold;
-            color: #333;
+            color: #7f8c8d;
+            background: white;
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: center;
@@ -131,27 +133,31 @@
 
         .action-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #3498db;
+            color: #3498db;
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.15);
         }
 
         .btn-primary {
-            background: #e9ecef;
+            background: white;
+            border-color: #3498db;
+            color: #3498db;
         }
 
         .btn-secondary {
-            background: #e9ecef;
+            background: white;
         }
 
         .btn-success {
-            background: #e9ecef;
+            background: white;
         }
 
         .btn-warning {
-            background: #e9ecef;
+            background: white;
         }
 
         .btn-info {
-            background: #e9ecef;
+            background: white;
         }
 
         .action-btn small {
@@ -364,27 +370,27 @@
         
         <div style="text-align: center; margin-top: 30px;">
             <button onclick="goToHome()" 
-                    style="padding: 15px 30px; border: none; background: #e9ecef; 
-                        color: #333; border-radius: 10px; cursor: pointer; margin: 5px;">
+                    style="padding: 15px 30px; border: 2px solid #3498db; background: white; 
+                        color: #3498db; border-radius: 10px; cursor: pointer; margin: 5px; font-weight: bold;">
                 🏠 홈으로
             </button>
             
             <button onclick="goToSettings()" 
-                    style="padding: 15px 30px; border: none; background: #e9ecef; 
-                        color: #333; border-radius: 10px; cursor: pointer; margin: 5px;">
+                    style="padding: 15px 30px; border: 2px solid #e0e0e0; background: white; 
+                        color: #7f8c8d; border-radius: 10px; cursor: pointer; margin: 5px;">
                 설정 변경
             </button>
             
             <!-- 🆕 데이터 내보내기 버튼 -->
             <button onclick="goToExport()" 
-                    style="padding: 15px 30px; border: none; background: #e9ecef; 
-                        color: #333; border-radius: 10px; cursor: pointer; margin: 5px;">
+                    style="padding: 15px 30px; border: 2px solid #e0e0e0; background: white; 
+                        color: #7f8c8d; border-radius: 10px; cursor: pointer; margin: 5px;">
                 📊 데이터 내보내기
             </button>
             
             <button onclick="clearAllData()" 
-                    style="padding: 15px 30px; border: none; background: #e9ecef; 
-                        color: #333; border-radius: 10px; cursor: pointer; margin: 5px;">
+                    style="padding: 15px 30px; border: 2px solid #e0e0e0; background: white; 
+                        color: #7f8c8d; border-radius: 10px; cursor: pointer; margin: 5px;">
                 모든 데이터 삭제
             </button>
         </div>

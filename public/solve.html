@@ -163,28 +163,34 @@
         }
         
         .btn-bookmark {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
         }
         
         .btn-skip {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #7f8c8d;
+            border: 2px solid #e0e0e0;
         }
 
         .btn-save-exit {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #7f8c8d;
+            border: 2px solid #e0e0e0;
         }
 
         /* 🆕 오류 신고 버튼 */
         .btn-report-error {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #7f8c8d;
+            border: 2px solid #e0e0e0;
         }
         
         .btn-bookmark:hover, .btn-skip:hover, .btn-save-exit:hover, .btn-report-error:hover {
             transform: scale(1.05);
+            border-color: #3498db;
+            color: #3498db;
         }
         
         .question-text {
@@ -235,16 +241,16 @@
         }
 
         .pdf-open-btn {
-            background: #e9ecef;
-            color: #333;
-            border: none;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
             padding: 14px 28px;
             border-radius: 10px;
             font-size: 1.05rem;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
             white-space: nowrap;
             display: flex;
             align-items: center;
@@ -252,7 +258,8 @@
         }
 
         .pdf-open-btn:hover {
-            background: #dee2e6;
+            background: #3498db;
+            color: white;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
@@ -278,8 +285,8 @@
         }
 
         .question-table tr:first-child {
-            background: #e9ecef;
-            color: #333;
+            background: #e8f4fc;
+            color: #2980b9;
             font-weight: bold;
         }
 
@@ -338,8 +345,9 @@
         }
         
         .option-label {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -439,13 +447,15 @@
         }
         
         .btn-prev {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #7f8c8d;
+            border: 2px solid #e0e0e0;
         }
         
         .btn-next {
-            background: #e9ecef;
-            color: #333;
+            background: #3498db;
+            color: white;
+            border: 2px solid #3498db;
         }
         
         .btn-prev:hover, .btn-next:hover {
@@ -454,7 +464,9 @@
         
         .btn-prev:disabled,
         .btn-next:disabled {
-            background: #e9ecef;
+            background: #f5f5f5;
+            color: #ccc;
+            border-color: #e0e0e0;
             cursor: not-allowed;
             transform: none;
         }
@@ -466,8 +478,9 @@
         }
         
         .skip-indicator {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -493,25 +506,29 @@
         .floating-btn {
             width: 50px;
             height: 50px;
-            border: none;
+            border: 2px solid #e0e0e0;
             border-radius: 50%;
             cursor: pointer;
             font-size: 1.2rem;
             transition: all 0.3s ease;
+            background: white;
         }
         
         .btn-home {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #3498db;
+            border-color: #3498db;
         }
         
         .btn-dashboard {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #7f8c8d;
         }
         
         .floating-btn:hover {
             transform: scale(1.1);
+            border-color: #3498db;
+            color: #3498db;
         }
 
         .completion-screen {
@@ -536,7 +553,7 @@
             background: #ffffff;
             padding: 20px;
             border-radius: 15px;
-            border-left: 5px solid #333;
+            border-left: 5px solid #3498db;
         }
 
         .stat-value {
@@ -615,25 +632,34 @@
 
         .modal-btn {
             padding: 12px 25px;
-            border: none;
+            border: 2px solid #e0e0e0;
             border-radius: 10px;
             cursor: pointer;
             font-weight: bold;
             transition: all 0.3s ease;
+            background: white;
         }
 
         .modal-btn-primary {
-            background: #e9ecef;
-            color: #333;
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
         }
 
         .modal-btn-secondary {
-            background: #e9ecef;
-            color: #333;
+            background: white;
+            color: #7f8c8d;
         }
 
         .modal-btn:hover {
             transform: translateY(-2px);
+            border-color: #3498db;
+            color: #3498db;
+        }
+
+        .modal-btn-primary:hover {
+            background: #2980b9;
+            color: white;
         }
 
         /* 🆕 오류 신고 모달 스타일 */
@@ -1733,37 +1759,37 @@
                     <h2>🎉 학습 완료!</h2>
                     
                     <div class="stats-grid">
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${totalQuestions}</div>
                             <div class="stat-label">총 문제 수</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${answeredCount}</div>
                             <div class="stat-label">답변한 문제</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${correctCount}</div>
                             <div class="stat-label">정답 수</div>
                         </div>
 
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${wrongCount}</div>
                             <div class="stat-label">오답 수</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${accuracy}%</div>
                             <div class="stat-label">정답률</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${skippedCount}</div>
                             <div class="stat-label">건너뛴 문제</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #333;">
+                        <div class="stat-card" style="border-left-color: #3498db;">
                             <div class="stat-value" style="color: #6c757d;">${timeString}</div>
                             <div class="stat-label">소요 시간</div>
                         </div>
@@ -1771,24 +1797,24 @@
                     
                     <div class="completion-actions">
                         ${skippedCount > 0 ? `
-                            <button class="completion-btn" onclick="reviewSkipped()" style="background: #e9ecef; color: #333;">
+                            <button class="completion-btn" onclick="reviewSkipped()" style="background: white; color: #7f8c8d; border: 2px solid #e0e0e0;">
                                 ⏭️ 건너뛴 문제 복습
                             </button>
                         ` : ''}
                         ${wrongCount > 0 ? `
-                            <button class="completion-btn" onclick="reviewWrong()" style="background: #e9ecef; color: #333;">
+                            <button class="completion-btn" onclick="reviewWrong()" style="background: white; color: #3498db; border: 2px solid #3498db;">
                                 ❌ 틀린 문제 복습
                             </button>
                         ` : ''}
-                        <button class="completion-btn" onclick="goToDashboard()" style="background: #e9ecef; color: #333;">
+                        <button class="completion-btn" onclick="goToDashboard()" style="background: white; color: #3498db; border: 2px solid #3498db;">
                             📊 대시보드로
                         </button>
-                        <button class="completion-btn" onclick="restartQuiz()" style="background: #e9ecef; color: #333;">
+                        <button class="completion-btn" onclick="restartQuiz()" style="background: white; color: #7f8c8d; border: 2px solid #e0e0e0;">
                             🔄 다시 풀기
                         </button>
                     </div>
                     
-                    <div style="margin-top: 30px; padding: 20px; background: #ffffff; border-radius: 10px; border-left: 4px solid #333;">
+                    <div style="margin-top: 30px; padding: 20px; background: #ffffff; border-radius: 10px; border-left: 4px solid #3498db;">
                         <p style="margin: 0; color: #2c3e50; font-weight: bold;">📊 학습 기록이 저장되었습니다!</p>
                         <p style="margin: 10px 0 0 0; color: #7f8c8d; font-size: 0.9rem;">
                             대시보드에서 자세한 통계를 확인하세요.<br>
