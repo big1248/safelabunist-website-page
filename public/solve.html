@@ -25,7 +25,7 @@
             font-family: 'Malgun Gothic', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #ffffff;
             min-height: 100vh;
         }
         
@@ -83,7 +83,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: conic-gradient(#3498db var(--progress), #ecf0f1 0);
+            background: conic-gradient(#6c757d var(--progress), #ecf0f1 0);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -94,12 +94,12 @@
         .timer {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #2ecc71;
+            color: #6c757d;
             min-width: 120px;
         }
 
         .timer.warning {
-            color: #e74c3c;
+            color: #6c757d;
             animation: pulse 1s infinite;
         }
         
@@ -120,7 +120,7 @@
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(90deg, #3498db, #2ecc71);
+            background: #e9ecef;
         }
         
         .question-header {
@@ -137,7 +137,7 @@
         .question-number {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #3498db;
+            color: #6c757d;
         }
 
         .question-meta {
@@ -163,24 +163,24 @@
         }
         
         .btn-bookmark {
-            background: #f39c12;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
         
         .btn-skip {
-            background: #95a5a6;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
 
         .btn-save-exit {
-            background: #e74c3c;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
 
         /* 🆕 오류 신고 버튼 */
         .btn-report-error {
-            background: #e67e22;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
         
         .btn-bookmark:hover, .btn-skip:hover, .btn-save-exit:hover, .btn-report-error:hover {
@@ -235,8 +235,8 @@
         }
 
         .pdf-open-btn {
-            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-            color: white;
+            background: #e9ecef;
+            color: #333;
             border: none;
             padding: 14px 28px;
             border-radius: 10px;
@@ -244,7 +244,7 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             white-space: nowrap;
             display: flex;
             align-items: center;
@@ -252,9 +252,9 @@
         }
 
         .pdf-open-btn:hover {
-            background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+            background: #dee2e6;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         .pdf-open-btn:active {
@@ -266,25 +266,25 @@
             border-collapse: collapse;
             margin: 20px 0;
             background: white;
-            border: 2px solid #3498db;
+            border: 2px solid #6c757d;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .question-table td {
             padding: 12px 15px;
-            border: 1px solid #bdc3c7;
+            border: 1px solid #6c757d;
             text-align: center;
             font-size: 1.1rem;
         }
 
         .question-table tr:first-child {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #e9ecef;
+            color: #333;
             font-weight: bold;
         }
 
         .question-table tr:nth-child(even) {
-            background: #f8f9fa;
+            background: #ffffff;
         }
 
         .question-table tr:hover {
@@ -332,14 +332,14 @@
         }
         
         .option:not(.correct):not(.incorrect):hover {
-            border-color: #3498db;
-            background: #f8f9fa;
+            border-color: #6c757d;
+            background: #ffffff;
             transform: translateX(5px);
         }
         
         .option-label {
-            background: linear-gradient(45deg, #3498db, #2980b9);
-            color: white;
+            background: #e9ecef;
+            color: #333;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -358,18 +358,18 @@
         }
         
         .option.selected {
-            border-color: #2ecc71;
+            border-color: #6c757d;
             background: #d5f4e6;
         }
         
         .option.correct {
-            border-color: #27ae60 !important;
+            border-color: #6c757d !important;
             background: #d5f4e6 !important;
             animation: correctPulse 0.6s ease;
         }
         
         .option.incorrect {
-            border-color: #e74c3c !important;
+            border-color: #6c757d !important;
             background: #fadbd8 !important;
             animation: incorrectShake 0.6s ease;
         }
@@ -400,13 +400,13 @@
         
         .feedback.correct {
             background: #d5f4e6;
-            border: 3px solid #27ae60;
+            border: 3px solid #6c757d;
             color: #155724;
         }
         
         .feedback.incorrect {
             background: #fadbd8;
-            border: 3px solid #e74c3c;
+            border: 3px solid #6c757d;
             color: #721c24;
         }
         
@@ -439,13 +439,13 @@
         }
         
         .btn-prev {
-            background: #95a5a6;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
         
         .btn-next {
-            background: #3498db;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
         
         .btn-prev:hover, .btn-next:hover {
@@ -454,7 +454,7 @@
         
         .btn-prev:disabled,
         .btn-next:disabled {
-            background: #bdc3c7;
+            background: #e9ecef;
             cursor: not-allowed;
             transform: none;
         }
@@ -466,8 +466,8 @@
         }
         
         .skip-indicator {
-            background: #f39c12;
-            color: white;
+            background: #e9ecef;
+            color: #333;
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
@@ -501,13 +501,13 @@
         }
         
         .btn-home {
-            background: #e74c3c;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
         
         .btn-dashboard {
-            background: #2ecc71;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
         
         .floating-btn:hover {
@@ -520,7 +520,7 @@
         }
 
         .completion-screen h2 {
-            color: #2ecc71;
+            color: #6c757d;
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
@@ -533,16 +533,16 @@
         }
 
         .stat-card {
-            background: #f8f9fa;
+            background: #ffffff;
             padding: 20px;
             border-radius: 15px;
-            border-left: 5px solid #3498db;
+            border-left: 5px solid #333;
         }
 
         .stat-value {
             font-size: 2rem;
             font-weight: bold;
-            color: #3498db;
+            color: #6c757d;
         }
 
         .stat-label {
@@ -623,13 +623,13 @@
         }
 
         .modal-btn-primary {
-            background: #3498db;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
 
         .modal-btn-secondary {
-            background: #95a5a6;
-            color: white;
+            background: #e9ecef;
+            color: #333;
         }
 
         .modal-btn:hover {
@@ -644,7 +644,7 @@
 
         .error-report-modal h3 {
             text-align: center;
-            color: #e74c3c;
+            color: #6c757d;
         }
 
         .error-type-group {
@@ -675,7 +675,7 @@
         }
 
         .error-type-option:hover {
-            border-color: #3498db;
+            border-color: #6c757d;
             background: #ebf5fb;
         }
 
@@ -715,7 +715,7 @@
 
         .error-details-textarea:focus {
             outline: none;
-            border-color: #3498db;
+            border-color: #6c757d;
         }
 
         .error-report-buttons {
@@ -1125,7 +1125,7 @@
             if (bookmarkedQuestions.has(questionId)) {
                 bookmarkedQuestions.delete(questionId);
                 document.querySelector('.btn-bookmark').textContent = '⭐ 북마크';
-                document.querySelector('.btn-bookmark').style.background = '#f39c12';
+                document.querySelector('.btn-bookmark').style.background = '#6c757d';
                 
                 const bookmarkDetails = JSON.parse(localStorage.getItem('bookmarkDetails') || '{}');
                 delete bookmarkDetails[questionId];
@@ -1145,7 +1145,7 @@
                 localStorage.setItem('bookmarkDetails', JSON.stringify(bookmarkDetails));
                 
                 document.querySelector('.btn-bookmark').textContent = '⭐ 북마크됨';
-                document.querySelector('.btn-bookmark').style.background = '#e67e22';
+                document.querySelector('.btn-bookmark').style.background = '#6c757d';
             }
             saveBookmarks();
         }
@@ -1390,10 +1390,10 @@
             const questionId = generateQuestionId(question, currentQuestionIndex);
             if (bookmarkedQuestions.has(questionId)) {
                 document.querySelector('.btn-bookmark').textContent = '⭐ 북마크됨';
-                document.querySelector('.btn-bookmark').style.background = '#e67e22';
+                document.querySelector('.btn-bookmark').style.background = '#6c757d';
             } else {
                 document.querySelector('.btn-bookmark').textContent = '⭐ 북마크';
-                document.querySelector('.btn-bookmark').style.background = '#f39c12';
+                document.querySelector('.btn-bookmark').style.background = '#6c757d';
             }
 
             const container = document.getElementById('optionsContainer');
@@ -1589,7 +1589,7 @@
         function startTimer() {
             if (mode === 'timer') {
                 timeLimit = totalQuestions * 90 * 1000;
-                document.getElementById('timer').style.color = '#2ecc71';
+                document.getElementById('timer').style.color = '#6c757d';
             }
             
             if (timerInterval) {
@@ -1733,62 +1733,62 @@
                     <h2>🎉 학습 완료!</h2>
                     
                     <div class="stats-grid">
-                        <div class="stat-card" style="border-left-color: #3498db;">
-                            <div class="stat-value" style="color: #3498db;">${totalQuestions}</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${totalQuestions}</div>
                             <div class="stat-label">총 문제 수</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #9b59b6;">
-                            <div class="stat-value" style="color: #9b59b6;">${answeredCount}</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${answeredCount}</div>
                             <div class="stat-label">답변한 문제</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #2ecc71;">
-                            <div class="stat-value" style="color: #2ecc71;">${correctCount}</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${correctCount}</div>
                             <div class="stat-label">정답 수</div>
                         </div>
 
-                        <div class="stat-card" style="border-left-color: #e74c3c;">
-                            <div class="stat-value" style="color: #e74c3c;">${wrongCount}</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${wrongCount}</div>
                             <div class="stat-label">오답 수</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #1abc9c;">
-                            <div class="stat-value" style="color: #1abc9c;">${accuracy}%</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${accuracy}%</div>
                             <div class="stat-label">정답률</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #f39c12;">
-                            <div class="stat-value" style="color: #f39c12;">${skippedCount}</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${skippedCount}</div>
                             <div class="stat-label">건너뛴 문제</div>
                         </div>
                         
-                        <div class="stat-card" style="border-left-color: #34495e;">
-                            <div class="stat-value" style="color: #34495e;">${timeString}</div>
+                        <div class="stat-card" style="border-left-color: #333;">
+                            <div class="stat-value" style="color: #6c757d;">${timeString}</div>
                             <div class="stat-label">소요 시간</div>
                         </div>
                     </div>
                     
                     <div class="completion-actions">
                         ${skippedCount > 0 ? `
-                            <button class="completion-btn" onclick="reviewSkipped()" style="background: #f39c12; color: white;">
+                            <button class="completion-btn" onclick="reviewSkipped()" style="background: #e9ecef; color: #333;">
                                 ⏭️ 건너뛴 문제 복습
                             </button>
                         ` : ''}
                         ${wrongCount > 0 ? `
-                            <button class="completion-btn" onclick="reviewWrong()" style="background: #e74c3c; color: white;">
+                            <button class="completion-btn" onclick="reviewWrong()" style="background: #e9ecef; color: #333;">
                                 ❌ 틀린 문제 복습
                             </button>
                         ` : ''}
-                        <button class="completion-btn" onclick="goToDashboard()" style="background: #2ecc71; color: white;">
+                        <button class="completion-btn" onclick="goToDashboard()" style="background: #e9ecef; color: #333;">
                             📊 대시보드로
                         </button>
-                        <button class="completion-btn" onclick="restartQuiz()" style="background: #3498db; color: white;">
+                        <button class="completion-btn" onclick="restartQuiz()" style="background: #e9ecef; color: #333;">
                             🔄 다시 풀기
                         </button>
                     </div>
                     
-                    <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #3498db;">
+                    <div style="margin-top: 30px; padding: 20px; background: #ffffff; border-radius: 10px; border-left: 4px solid #333;">
                         <p style="margin: 0; color: #2c3e50; font-weight: bold;">📊 학습 기록이 저장되었습니다!</p>
                         <p style="margin: 10px 0 0 0; color: #7f8c8d; font-size: 0.9rem;">
                             대시보드에서 자세한 통계를 확인하세요.<br>
