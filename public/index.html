@@ -214,14 +214,11 @@
             font-size: 3.5rem;
             margin-bottom: 15px;
             display: block;
-            filter: grayscale(100%);
-            opacity: 0.7;
             transition: all 0.3s ease;
         }
 
         .card:hover .card-icon {
-            filter: grayscale(50%);
-            opacity: 0.9;
+            transform: scale(1.1);
         }
 
         .card-title {
@@ -445,6 +442,15 @@
             </div>
 
             <div class="selection-area">
+                <div class="navigation-buttons" style="margin-bottom: 25px;">
+                    <button class="btn btn-back" id="backBtn" onclick="goBack()" style="display: none;">
+                        <span style="position: relative; z-index: 1;">이전 단계</span>
+                    </button>
+                    <button class="btn btn-start" id="startBtn" onclick="startQuiz()" style="display: none;">
+                        <span style="position: relative; z-index: 1;">학습 시작</span>
+                    </button>
+                </div>
+
                 <div id="breadcrumb" class="breadcrumb" style="display: none;"></div>
                 
                 <div id="categorySelection">
@@ -466,15 +472,6 @@
                         <span>회차를 선택하세요</span>
                     </h2>
                     <div id="sessionContainer"></div>
-                </div>
-
-                <div class="navigation-buttons">
-                    <button class="btn btn-back" id="backBtn" onclick="goBack()" style="display: none;">
-                        <span style="position: relative; z-index: 1;">이전 단계</span>
-                    </button>
-                    <button class="btn btn-start" id="startBtn" onclick="startQuiz()" style="display: none;">
-                        <span style="position: relative; z-index: 1;">학습 시작</span>
-                    </button>
                 </div>
             </div>
         </div>
