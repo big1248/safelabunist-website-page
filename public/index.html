@@ -607,6 +607,27 @@
         }
 
         // 3단계: 소분류(회차) 선택
+        // 과목명 매핑
+        const subjectMap = {
+            'safety': '안전관리론',
+            'disaster': '재난관리론',
+            'urban': '도시계획',
+            'law': '방재관계법규'
+        };
+
+        function getSubjectName(session) {
+            // session이 숫자만 있으면 (예: "2", "3") 회차로 표시
+            if (/^\d+$/.test(session)) {
+                return null;
+            }
+            // "1-safety" 형식에서 과목 추출
+            const match = session.match(/-(\w+)$/);
+            if (match && subjectMap[match[1]]) {
+                return subjectMap[match[1]];
+            }
+            return null;
+        }
+
         function loadSessions(categoryKey, examKey) {
             const sessionsByYear = ExamUtils.getSessionsByYear(categoryKey, examKey);
             const container = document.getElementById('sessionContainer');
@@ -640,9 +661,17 @@
                     const card = document.createElement('div');
                     card.className = 'card session-card';
                     card.setAttribute('data-session-id', session.id);
+                    
+                    // 과목명 또는 회차 표시
+                    const subjectName = getSubjectName(session.session);
+                    const displayTitle = subjectName || `${session.session}회`;
+                    const displaySubtitle = subjectName 
+                        ? `${session.year}년 ${subjectName}` 
+                        : `${session.year}년 ${session.session}회차`;
+                    
                     card.innerHTML = `
-                        <div class="session-year">${session.session}회</div>
-                        <div class="card-title">${session.year}년 ${session.session}회차</div>
+                        <div class="session-year">${displayTitle}</div>
+                        <div class="card-title">${displaySubtitle}</div>
                         <div class="session-info">
                             ${session.questionCount}문제
                         </div>

@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #ffffff;
             min-height: 100vh;
             padding: 20px;
             line-height: 1.8;
@@ -30,21 +30,22 @@
         }
 
         .guide-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #ffffff;
+            color: #2c3e50;
             padding: 50px 40px;
             text-align: center;
+            border-bottom: 4px solid #3498db;
         }
 
         .guide-header h1 {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #2c3e50;
         }
 
         .guide-header p {
             font-size: 1.2rem;
-            opacity: 0.95;
+            color: #7f8c8d;
         }
 
         .guide-nav {
@@ -80,9 +81,9 @@
         }
 
         .nav-link:hover {
-            background: #667eea;
+            background: #3498db;
             color: white;
-            border-color: #667eea;
+            border-color: #3498db;
             transform: translateY(-2px);
         }
 
@@ -100,7 +101,7 @@
             color: #2c3e50;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #3498db;
             display: flex;
             align-items: center;
             gap: 15px;
@@ -181,7 +182,7 @@
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-color: #667eea;
+            border-color: #3498db;
         }
 
         .feature-icon {
@@ -217,7 +218,7 @@
         }
 
         .step-number {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #3498db, #2980b9);
             color: white;
             width: 40px;
             height: 40px;
@@ -254,8 +255,9 @@
         .back-button {
             display: inline-block;
             padding: 15px 30px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
             text-decoration: none;
             border-radius: 10px;
             font-weight: bold;
@@ -265,7 +267,54 @@
 
         .back-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            background: #3498db;
+            color: white;
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+        }
+
+        /* 플로팅 홈 버튼 */
+        .floating-home {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .floating-home a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: white;
+            color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .floating-home a:hover {
+            background: #3498db;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .floating-home {
+                right: 15px;
+                bottom: 20px;
+                top: auto;
+                transform: none;
+            }
+            .floating-home a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
         }
 
         .table-container {
@@ -282,7 +331,7 @@
         }
 
         th {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #3498db, #2980b9);
             color: white;
             padding: 15px;
             text-align: left;
@@ -934,7 +983,7 @@
 <li>🖼️ 이미지 문제인데 PDF 접근 불가</li>
 <li>❓ 기타</li>
 </ul>
-<p><strong>신고 이메일:</strong> <a href="mailto:safelabunist@gmail.com">safelabunist@gmail.com</a></p>
+<p><strong>신고 이메일:</strong> <a href="/cdn-cgi/l/email-protection#23504245464f4241564d4a505763444e424a4f0d404c4e"><span class="__cf_email__" data-cfemail="0c7f6d6a69606d6e7962657f784c6b616d6560226f6361">[email&#160;protected]</span></a></p>
 <div class="tip-box">
       구체적인 문제 번호와 스크린샷을 포함하면 처리 속도가 빨라집니다.
     </div>
@@ -988,7 +1037,7 @@
 </section><section class="section" id="support"><h2>🛠️ 지원 및 문의</h2>
 <ul>
 <li><strong>GitHub Issues</strong>: 버그 리포트, 기능 제안</li>
-<li><strong>이메일</strong>: <a href="mailto:safelabunist@gmail.com">safelabunist@gmail.com</a></li>
+<li><strong>이메일</strong>: <a href="/cdn-cgi/l/email-protection#b2c1d3d4d7ded3d0c7dcdbc1c6f2d5dfd3dbde9cd1dddf"><span class="__cf_email__" data-cfemail="abd8cacdcec7cac9dec5c2d8dfebccc6cac2c785c8c4c6">[email&#160;protected]</span></a></li>
 <li><strong>오류 신고</strong>: 문제 풀이 화면의 🚨 버튼</li>
 </ul>
 </section><section class="section" id="privacy"><h2>🔐 개인정보 처리방침</h2>
@@ -1015,7 +1064,7 @@
 </div>
 <div style="text-align: center; margin-top: 40px;">
 <a class="back-button" href="index.html">
-                        🏠 메인 페이지로 돌아가기
+                        🏠 홈으로
                     </a>
 </div>
 </section>
@@ -1027,6 +1076,13 @@
 </section>
 </div>
 </div>
+
+<!-- 플로팅 홈 버튼 -->
+<div class="floating-home">
+    <a href="index.html" title="홈으로">🏠</a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script>
         // 부드러운 스크롤
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1057,11 +1113,13 @@
             });
 
             navLinks.forEach(link => {
-                link.style.background = 'white';
-                link.style.color = '#495057';
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.style.background = '#667eea';
+                link.style.background = '';
+                link.style.color = '';
+                link.style.borderColor = '';
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.style.background = '#3498db';
                     link.style.color = 'white';
+                    link.style.borderColor = '#3498db';
                 }
             });
         });
